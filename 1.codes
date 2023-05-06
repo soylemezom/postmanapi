@@ -1,0 +1,38 @@
+package gence.ozan;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+
+
+
+
+
+public class xanbagi {
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+System.setProperty("webdriver.chrome.driver","/Users/mustafasoylemezo/Desktop/chromedriver_mac_arm64/chromedriver");
+WebDriver driver=new ChromeDriver();
+
+driver.navigate().to("https://www.gradelink.com/");
+
+driver.findElement(By.id("menu-item-66252")).click();
+
+driver.findElement(By.id("sid")).sendKeys("1317");
+
+driver.close();
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}
+
